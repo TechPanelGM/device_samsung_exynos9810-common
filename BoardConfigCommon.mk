@@ -149,6 +149,12 @@ TARGET_RELEASETOOLS_EXTENSIONS := $(COMMON_PATH)/releasetools
 # RIL
 ENABLE_VENDOR_RIL_SERVICE := true
 
+# Funny Build Error Workaround
+BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
+
+# HIDL - FCM
+DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := $(COMMON_PATH)/configs/vintf/framework_compatibility_matrix.xml
+
 # Sepolicy
 BOARD_SEPOLICY_TEE_FLAVOR := mobicore
 include device/lineage/sepolicy/exynos/sepolicy.mk
