@@ -20,5 +20,6 @@ cc_binary {
     srcs: ["secril_config_svc.cpp"],
     shared_libs: [
         "libbase",
+        "libexpat"
     ],
 }
